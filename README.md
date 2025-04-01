@@ -12,9 +12,10 @@
       model = ThreeLayerNet(input_size, 512,256, output_size,L2=0,actfunlist=['relu','leakyrelu'])
       model,train_losses, val_losses, val_accuracies = train(model,X_train, y_train, X_val, y_val,learning_rate=1e-4,num_epochs=10)
     Main中调用Test 函数即可   示例代码:
-    test_model = ThreeLayerNet(input_size, 512,256, output_size,L2=0,actfunlist=['relu','leakyrelu'])
-    test_model.load(model_dir)
-    test_acc = test(test_model, X_test, y_test)
+      test_model = ThreeLayerNet(input_size, 512,256, output_size,L2=0,actfunlist=['relu','leakyrelu'])
+      
+      test_model.load(model_dir)
+      test_acc = test(test_model, X_test, y_test)
     参数搜索, 示例代码:
     best_model = parameter_search(X_train, y_train, X_val, y_val, X_test, y_test,actfunlist=['relu','leakyrelu'],epoch=10)
     如需要修改搜索范围在parameter_search 中进行搜索即可
