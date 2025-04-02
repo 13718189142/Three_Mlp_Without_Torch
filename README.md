@@ -38,4 +38,6 @@
     
             如果特定想调用某个具体的文件, 不使用匹配机制的话, 使用load2函数, 示例代码:model.load2(r"D:\homework\MLZL\Model\h1_512h2_256actfun_relu_leakyreluL2_0_model.pkl")
             
-Plot文件为绘图文件, 为ipynb格式逐个code块运行即可, 包含训练流程
+Plot文件为绘图文件, 为ipynb格式逐个code块运行即可, 包含训练流程. 及测试板块.
+
+网络参数存储在model文件中, 百度网盘中有备份链接为: (https://pan.baidu.com/s/1rQXyreIC0Z4K00_qVUESOQ?pwd=6666 提取码: 6666 复制这段内容后打开百度网盘手机App，操作更方便哦) 放置在同目录中的model文件即可
